@@ -1,0 +1,140 @@
+\chapter{Visão Geral de Finanças Corporativas}
+\section*{Introdução}
+Antes de começar com o capítulo vamos compreender o que são as Finanças Corporativas. O professor Damodaran define as Finanças Corporativas como todas as decisões que envolve dinheiro dentro da uma companhia, ou seja, tudo. Companhias precisam tomar decisões e em todas elas o dinheiro está envolvido.
+\\~\\
+As três principais decisões que as empresas precisam fazer são: \textbf{1) Investimentos}, em quais projetos investir e quanto dinheiro alocar; \textbf{2) Financeiras}, controle de gastos, tomar crédito, o equilíbrio ótimo entre dívida (capital de terceiros) e \textit{equity} (capital dos acionistas/socios); \textbf{3) Dividendos}, quanto e quando pagar dividendos aos socios/acionistas.
+\\~\\
+O curso é aplicado e utilizaremos as seguintes empresas: Disney, Vale, Tata Motors, Baidu, Deutsche Bank e Bookscape. O professor Damodaran provavelmente utilizará o Excel, porém tentarei utilizar a linguagem Python, todos os códigos estarão disponíveis no Repositório no Github junto com as notas em \LaTeX.
+\\~\\
+O curso exige três pré-requisitos: contabilidade, ser capaz de ler um demonstrativo; estatística, ser capaz de entender o que uma regressão significa; finanças, noções de risco e retorno, valor presente, etc. O professor tem todos esses cursos disponíveis em seu canal no youtube.
+
+\section{O que são Finanças Corporativas?}
+Como vimos anteriormente, mas agora com mais profundidade, toda atividade de um negócio está no escopo das finanças corporativas porque toda decisão dentro de um negócio envolve dinheito e tem implicações financeiras. No final, as finanças corporativas nos ensinam a \textbf{como} um negócio deve funcionar, quais diretrizes e parâmetros usar na hora de um decisão de negócio.
+\\~\\
+Desde o marketing até os recursos humanos, absolutamente tudo dentro de uma empresa tem uma consequência financeiras. Compreender finanças corporativas ajudará a organizar a situação financeira das companhias e isso é refletido em seus setores.
+
+\section{Balanço Patrimonial}
+Há uma diferença entre como a contabilidade e as finanças corporativas enxergam um balanço patrimonial. De fato, o Balanço Patrimonial é demonstrativo muito importante e contábilmente é representado assim:
+\\~\\
+\begin{tabular}{| c c | c c |}
+\hline
+Ativo & & Passivo & \\
+\hline
+%% Primeira Linha
+Ativo circulante &
+\makecell{ Ativos de curto prazo, \\ líquidos} &
+Passivo circulante &
+\makecell{ Obrigações de curto prazo \\ com terceiros } \\
+\hline
+Ativo não-circulante &
+\makecell{Ativos de \\ longo prazo }&
+Dívida &
+\makecell{Obrigações com \\ capital de terceiros} \\
+\hline
+\makecell{Investimentos e \\ participações} &
+Ativo Financeiro &
+Passivo não-circulante &
+\makecell{Obrigações com terceiros \\ de longo prazo}\\ 
+\hline
+Intangível &
+\makecell{Ativos não-físicos \\ mas que geram valor }&
+Patrimônio Líquido &
+\makecell{Obrigações com \\ acionistas}\\
+\hline
+\end{tabular}
+\\~\\
+Para entender o balanço patrimonial assim precisamos ver ele da forma que os contadores vêm e como cada uma das contas é feita. O balanço patrimonial da contabilidade considera o \textbf{custo} dos ativos. Na perspectiva contabil isso faz sentido, porém, para as finanças corporativas, não. Quando analisamos uma empresa queremos saber o \textbf{valor} dos ativos.
+\\~\\
+Um exemplo crítico disso é como o ativo não-circulante é contabilizado. Suponha que você tem um equipamento de 15 anos, no balanço patrimonial ele é contabilizado como o preço pago pelo equipamento menos a depreciação, i.e., quanto esse equipamento deixa de "valer" a cada ano que passa. Qual o problema disso? E se esse ativo ainda gerar valor para a empresa? E a inflação, como fica? O dinheiro desembolsado 15 anos atrás valia mais do que hoje, o aumento dos preços \textbf{apreciaria} o equipamento.
+\\~\\
+Para o ativo circulante não temos tanto problema assim, são ativos de curto prazo, com menos de 6 meses, então seu valor é mais próximo do que foi efetivamente pago.
+\\~\\
+Outro problema em como o balanço patrimonial é contabilizado são as participações. Como esse ativo é contabilizado depende do propósito da participação. Se estamos falando de \textit{trading} a participação está ligado ao preço do mercado. Caso uma empresa tenha comprado R\$ 1.000.000,00 em participação como um \textbf{investimento estratégico} então o valor no Balanço Patrimonial é o o preço pago e não o atual, mesmo que sua participação naquela empresa valha, hoje, R\$ 10.000.000,00 ou mais. 
+\\~\\
+Além desses, temos os ativos intangíveis. Hoje as empresas mais valiosas do mercado são de tecnologia, o ativo mais importante delas é sua marca. Porém dentro do intangível existe um problema gigantesco, o \textbf{patrimônio de marca}, ou, \textit{goodwill} em inglês.
+\\~\\
+Esse ativo surge da compra de uma empresa por outra. Sabemos que uma empresa não é só ativo e passivo, existe toda uma base de cliente, relacionamento, reputação, tudo isso é intangível e difícil de ser mensurado. Porém, no processo de aquisição calcula-se o valor justo a ser pago pelos ativos e passivos, é feita a diferença entre o preço efetivamente pago e o patrimônio líquido justo.
+\begin{quote}
+\textit{Balance Sheets have this very unpleasant requirement, which is, they have to balance. Goodwill exists with one reason and one reason alone, to make the Balance Sheets balance.}
+\end{quote}
+
+A contabilidade tem um papel, gravar o histórico, ela não é uma ferramenta analítica. Tem suas regras que devem ser cegamente seguida pois é uma atividade que \textbf{deve} trabalhar dentro da legalidade.
+\\~\\
+Entender uma empresa como um contador não funciona para as finanças corporativas, esse é um campo totalmente orientado para o futuro. Por isso, precisamos pensar no balanço patrimonial assim:
+
+\begin{tabular}{| l l | l l |}
+\hline 
+Ativo & & Passivo & \\ \hline
+
+\makecell{Ativos \\ existentes } &
+\makecell{Investimentos existentes \\ Geram fluxo de caixa hoje\\ capital rotativo e \\ de longo prazo}
+& Dívida & \makecell{Despesas fixas \\ Impostos dedutiveis \\ Data de maturidade fixa} \\
+\hline
+\makecell{Ativos de \\ crescimento} &
+\makecell{Valor esperado \\ de investimentos futuros} &
+Equity & \makecell{Obrigações perpétuas, \\ Obrigação residual \\ do fluxo de caixa} \\
+\hline
+\end{tabular}
+\\~\\
+Ao analisar sua empresa eu não ligo se você investiu R\$ 50mi. no último ano, eu me importo com o quanto esse investimento gerará de retorno pra empresa e com a perspectiva de futuros investimento.
+
+\section{Visão geral das Finanças Corporativas}
+Como todo compo de estudo as Finanças Corporativas possuem um objeto dentro de um companhia, maximizar o valor da firma. Isso é básico, mas existem três princípios que regem as Finanças Corporativas para atingir seu objetivo.
+\subsection*{Princípios Básicos:}
+\textbf{1) Princípio do investimento:} o primeiro princípio pode ser resumido em equilibrar o risco e o retorno dos projetos de investimento. O retorno, medido em fluxos de caixa e não em lucro líquido, deve ser maior do que a taxa mínima de retorno. Um fator importante é que quão mais arriscado um projeto, maior a taxa mínima.
+\\~\\
+\textbf{2) Princípio das Finanças:} esse princípio é simplificado pelo equiíbrio entre o uso de capital de terceiros (dívida) e de capital próprio (equity).
+\\~\\
+Essas são as duas formas de financiar os investimento mencionados antes, dívidas e equity, a proporção ótima entre essas duas fontes depende de diversas variáveis, estágio da empresa em seu ciclo de vida, cenário macroeconômico, perspectivas, etc. Mas, num geral, podemos dfizer que a proporção entre capital próprio e de terceiros é aquela que minimiza a taxa mínima, ou seja, a proporção que torno os investimentos mais baratos.
+\\~\\
+Outro competência no escopo do princípio das finanças é que tipo de dívida tomar de acordo com a composição de seus ativos, prazo do investimentos, país em que a companhia está sediada, etc.
+\\~\\
+\textbf{3) Princípio dos dividendos: } O terceiro e último princípio também é baseado em um equilíbrio, o equilíbrio entre quanto do fluxo de caixa residual deve ficar na comapnhia e quando deve ser pago aos acionistas.
+\\~\\
+Esse princípio depende quase que exclusivamente do estágio da companhia em seu ciclo de vida, se ela é uma start-up, não faz sentido pagar dividendos, afinal, os investimentos realizados por uma empresa de pequeno porte são, num geral, bem altos. Então, nesse caso a empresa vai segurar dinheiro no seu caixa para futuros investimentos.
+\\~\\
+Isso não ocorre com empresas de grande porte, são empresas maduras e que seus investimentos podem não compensar mais, nesse caso, o dinheiro remanescente do período deve ser transferido aos acionistas. 
+\\~\\
+Existem duas formas de ocorrer essa transferência:1) dividendos, o dinheiro do caixa é transferido diretamente ao sócio/acionistas, e 2) via \textit{buybacks}, a comapnhia utiliza o dinheiro em caixa para recomprar as ações dos acionistas.
+\\~\\
+
+\subsection*{Características:}
+Além dos princípios que regem as finanças corporativas ela também tem suas característica, são elas:
+\\~\\
+\textbf{Senso Comum:} os objetivos das finanças corporativas são simples e intuitivos, a grande mágica e dificuldade está nos modelos, porém, num geral, ela quer apenas uma coisa, tornar a empresa mais valiosa e todos sabemos qual caminho seguir, ter o máximo de retorno com o mínimo de custo e tomando pouco risco. Se um investimento te custa 10\% e retorna apenas 9\%, isso é um bom investimento? Uma divída que custa 9\% é melhor do que uma que custa 8\%? 
+\\~\\
+\textbf{Foco:} há apenas um objetivo, valor, a grande mágica reside em como gerar esse valor.
+\\~\\
+\textbf{O foco muda de acordo com a maturidade do negócio}: uma empresa nasce, cresce, consolida-se, estabiliza-se e decai. Como cada um dos princípios será regido depende disso. Se é uma empresa nova o investimento deve ser máximo e os dividendos mínimos, se é madura, investimentos necessários e dividendos máximos. Cada fase do negócio necessita de uma gestão diferente.
+\\~\\
+\textbf{Universal:} todo negócio precisa investir, gerir suas finanças e pagar dividendos. O objeto é o mesmo para todo tipo de negócio. Seja um empresa de capital abertou ou não, isso não faz diferença na hora de investir, o custo de capital deve ser mínimo e o retorno máximo.
+\\~\\
+VIOLAR OS PRINCÍPIOS TEM UM CUSTO: cedo ou tarde a estratégia que viola os princípios se tornará insustentável e custará muito caro. Um movimento massivo e irracional assim pode levar a bolhas e crises econômicas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
