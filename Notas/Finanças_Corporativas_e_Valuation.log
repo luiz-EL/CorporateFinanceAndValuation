@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.15)  29 DEC 2022 18:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.15)  31 DEC 2022 18:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -867,62 +867,144 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--56
 
  []
 
-[15]) (./Finanças Corporativas/ch06.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
- [16]
-[17] [18
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--83
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 84--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--101
+
+ []
+
+[18]) (./Finanças Corporativas/ch03.tex [19] [20
 
 ]
 Cap\'{\i }tulo 3.
-) (./Finanças Corporativas/ch07.tex [19] [20
+) (./Finanças Corporativas/ch04.tex [21] [22
 
 ]
 Cap\'{\i }tulo 4.
-) (./Finanças Corporativas/ch08.tex [21] [22
+) (./Finanças Corporativas/ch05.tex [23] [24
 
 ]
 Cap\'{\i }tulo 5.
-) (./Finanças Corporativas/ch09.tex [23] [24
+) (./Finanças Corporativas/ch06.tex [25] [26
 
 ]
 Cap\'{\i }tulo 6.
-) (./Finanças Corporativas/ch10.tex [25] [26
+) (./Finanças Corporativas/ch07.tex [27] [28
 
 ]
 Cap\'{\i }tulo 7.
-) (./Finanças Corporativas/ch11.tex [27] [28
+) (./Finanças Corporativas/ch08.tex [29] [30
 
 ]
 Cap\'{\i }tulo 8.
-) (./Finanças Corporativas/ch12.tex [29] [30
+) (./Finanças Corporativas/ch09.tex [31] [32
 
 ]
 Cap\'{\i }tulo 9.
-) (./Finanças Corporativas/ch13.tex [31] [32
+) (./Finanças Corporativas/ch10.tex [33] [34
 
 ]
 Cap\'{\i }tulo 10.
-) (./Finanças Corporativas/ch14.tex [33] [34
+) (./Finanças Corporativas/ch11.tex [35] [36
 
 ]
 Cap\'{\i }tulo 11.
-) (./Finanças Corporativas/ch15.tex [35] [36
-
-]
-Cap\'{\i }tulo 12.
 ) [37] [38
 
 ] [39] [40] (./Finanças_Corporativas_e_Valuation.aux)
 Package rerunfilecheck Info: File `Finanças_Corporativas_e_Valuation.out' has 
 not changed.
-(rerunfilecheck)             Checksum: 764209B3B6B204721AB9E73895B7AD70;7717.
+(rerunfilecheck)             Checksum: D38A9E110E1AF5AA2C9D274383093027;7476.
  ) 
 Here is how much of TeX's memory you used:
- 13304 strings out of 478238
- 208281 string characters out of 5850455
+ 13302 strings out of 478238
+ 208177 string characters out of 5850455
  535781 words of memory out of 5000000
- 31195 multiletter control sequences out of 15000+600000
+ 31193 multiletter control sequences out of 15000+600000
  491597 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,13n,63p,630b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -939,11 +1021,11 @@ m1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr
 st/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/
 public/cm-super/sfsl1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
 /sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on Finanças_Corporativas_e_Valuation.pdf (40 pages, 336543 byte
+Output written on Finanças_Corporativas_e_Valuation.pdf (40 pages, 341284 byte
 s).
 PDF statistics:
  517 PDF objects out of 1000 (max. 8388607)
  440 compressed objects within 5 object streams
- 97 named destinations out of 1000 (max. 500000)
- 345 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 100 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
